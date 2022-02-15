@@ -68,3 +68,71 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Predicted User Scenarios
+
+Feature 2: Show/Hide an event’s details
+	
+As a user,
+	I should be able to show or hide and event’s details,
+	So that I can see or not see a certain event’s details
+
+	Scenario 1: An event element is collapsed by default
+	Given user has not clicked on an event element
+	When the user opens the app
+Then the event element should be collapsed
+
+Scenario 2: User can expand an event to see its details
+Given a user is looking for event information
+When the user opens the app
+Then they should be able to toggle the event to show details
+
+Scenario 3: User can collapse an event to hide its details
+Given a user wants to hide event details
+When they have them toggled
+Then they should be able to collapse the event details
+
+Feature 3: Specify number of events
+	As a user,
+	I should be able to specify a number of events,
+	So that I can see a specific number of events
+
+	Scenario 1: When user hasn’t specified a number, 32 is the default number
+	Given a user has not specified the number of events they want shown
+	When they are searching events
+	Then the default number should be 32
+	
+	Scenario 2: User can change the number of events they want to see
+	Given a user wants to see more or less than 32 events
+	When they are searching events
+	Then they should be able to change the number of events they can see
+	
+
+Feature 4: Use the app when offline
+	As a user,
+	I should be able to use the app offline,
+	So that I can use the app while offline
+
+	
+
+Scenario 1: Show cached data when there’s no internet connection
+	Given a user wants to use the app
+	When they are offline
+	Then they should be able to see cached data
+
+Scenario 2: Show error when user changes the settings (city, time range)
+	Given a user tries to change settings (city, time range)
+	When they are offline
+	Then the app should show an error
+
+Feature 5: Data visualization
+	As a user,
+	I should be able to see a chart with the number of upcoming events,
+	So I can better read the data
+
+Scenario 1: Show a chart with the number of upcoming events in each city
+	Given a user wants to see the number of events
+	When they are searching by city
+	Then they should see a chart that lists this info
+	
+
