@@ -134,5 +134,5 @@ Scenario 1: Show a chart with the number of upcoming events in each city
 	Given a user wants to see the number of events
 	When they are searching by city
 	Then they should see a chart that lists this info
-	
+
 
