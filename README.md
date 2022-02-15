@@ -1,3 +1,6 @@
+# Project purpose
+Using a TDD approach a make a meet style application that is serverless and functions while offline
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
